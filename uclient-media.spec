@@ -7,7 +7,7 @@ License:	GPL
 Group:		X11/Applications/Games
 Group(de):	X11/Applikationen/Spiele
 Group(pl):	X11/Aplikacje/Gry
-Source0:	%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.un.pl/pub/worldforge/media/%{name}-%{version}.tar.gz
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
