@@ -1,4 +1,5 @@
 Summary:	Media files for uclient
+Summary(pl):	Pliki medialne dla uclient
 Name:		uclient-media
 Version:	0.1
 Release:	1
@@ -13,20 +14,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 UCLIENT is an isometric WorldForge client with items and tiles based
 on a 2:1 iso perspective.
 
-%prep
+%description -l pl
+UCLIENT to izometryczny klient WorldForge z przedmiotami i kaflami
+bazuj±cymi na perspektywie iso 2:1.
 
-%build
+%prep
 
 %install
 rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT/usr/share
+install -d $RPM_BUILD_ROOT%{_datadir}
 
-cd $RPM_BUILD_ROOT/usr/share
-tar zxvf %{SOURCE0} 
+tar xzf %{SOURCE0} -C $RPM_BUILD_ROOT%{_datadir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-/usr/share/forge
+%{_datadir}/forge
