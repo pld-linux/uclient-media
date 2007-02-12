@@ -1,5 +1,5 @@
 Summary:	Media files for uclient
-Summary(pl):	Pliki medialne dla uclient
+Summary(pl.UTF-8):   Pliki medialne dla uclient
 Name:		uclient-media
 Version:	0.1
 Release:	1
@@ -14,9 +14,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 UCLIENT is an isometric WorldForge client with items and tiles based
 on a 2:1 iso perspective.
 
-%description -l pl
+%description -l pl.UTF-8
 UCLIENT to izometryczny klient WorldForge z przedmiotami i kaflami
-bazuj±cymi na perspektywie iso 2:1.
+bazujÄ…cymi na perspektywie iso 2:1.
 
 %prep
 
