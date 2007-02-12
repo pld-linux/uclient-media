@@ -1,5 +1,5 @@
 Summary:	Media files for uclient
-Summary(pl.UTF-8):   Pliki medialne dla uclient
+Summary(pl.UTF-8):	Pliki medialne dla uclient
 Name:		uclient-media
 Version:	0.1
 Release:	1
